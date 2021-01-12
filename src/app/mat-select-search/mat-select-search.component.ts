@@ -199,6 +199,9 @@ export class MatSelectSearchComponent implements OnInit, OnDestroy, ControlValue
   /** Reference to the search input field */
   @ViewChild('innerSelectSearch', { read: ElementRef, static: true }) innerSelectSearch: ElementRef;
 
+  /** Reference to the toggle all checkbox */
+  @ViewChild('innerToggleAllCheckbox', { read: ElementRef, static: true }) innerToggleAllCheckbox: ElementRef;  
+
   /** Reference to custom search input clear icon */
   @ContentChild(MatSelectSearchClearDirective, { static: false }) clearIcon: MatSelectSearchClearDirective;
 

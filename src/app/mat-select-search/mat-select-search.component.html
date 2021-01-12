@@ -7,8 +7,8 @@
       class="mat-select-search-inner mat-typography mat-datepicker-content mat-tab-header"
       [ngClass]="{'mat-select-search-inner-multiple': matSelect.multiple, 'mat-select-search-inner-toggle-all': _isToggleAllCheckboxVisible() }">
 
-  <mat-checkbox *ngIf="_isToggleAllCheckboxVisible()"
-                [color]="matFormField?.color"
+  <mat-checkbox #innerToggleAllCheckbox
+                *ngIf="_isToggleAllCheckboxVisible()"
                 class="mat-select-search-toggle-all-checkbox"
                 [checked]="toggleAllCheckboxChecked"
                 [indeterminate]="toggleAllCheckboxIndeterminate"
